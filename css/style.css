@@ -1,8 +1,13 @@
-body{
+body, html{
 	margin:0;
 	padding:0;
 	text-align: center;
 	max-height:100%;
+	width: 100%;
+}
+*{
+	padding: 0;
+	margin:0;
 }
 
 .clearfix{
@@ -295,7 +300,7 @@ background-color: #FFCB2F;
 	/*height: 600px;*/
 	color: white;
 	text-align: center;
-	padding: 90px 0;
+	padding: 100px 0px;
 }
 
 .section7 i{
@@ -326,6 +331,10 @@ background-color: #FFCB2F;
 	line-height: 40px;
 }
 
+.section8{
+	padding: 100px 0px;
+}
+
 .location{
 	float: left;
 	
@@ -335,6 +344,7 @@ background-color: #FFCB2F;
 #location{
 	text-align: left;
 	line-height: 35px;
+
 }
 
 #fontawesome{
@@ -352,8 +362,95 @@ background-color: #FFCB2F;
 .touch{
 	float: left;
 	margin-left: 115px;
+	padding-top: 50px;
 }
 
 .touch span{
 	font-size: 17px;
 }
+
+.contactform{
+	clear: both;
+	margin-top: 70px;
+}
+
+.form-control{
+
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    margin-bottom: 25px;
+}
+
+textarea.form-control {
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.btn-submit{
+    width: 184px;
+    padding: 14px 5px;
+    border-radius: 30px;	
+    background-color: #FFCB2F;
+    border: 2px solid #FFCB2F;
+    color: white;
+    font-size: 16px;
+}
+
+.section9{
+	    height: 350px;
+	    margin-top: 60px;
+}
+
+
+.section10{
+	background-color: #0C0B0B;
+	/*height: 300px;*/
+	text-align: center;
+
+	padding: 100px 0px;
+}
+
+.section10 h3{
+	color: white;
+}
+
+.section10 ul{
+	list-style: none;
+	display: block;
+	margin-top: 40px;
+}
+
+.section10 ul li{
+	display: inline-block;
+	
+}
+
+.section10 a{
+	margin-right: 20px;
+
+	color: #FFCB2F;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
