@@ -1,37 +1,22 @@
 
 $(document).ready(function(){
 
+	$(".menuhover").hide();
+
+	// To make the element wiht id bars hidden by default
 	$("#bars").click(function(){
 
 		$(".menuhover").toggle();
-		// $("#hide1").removeClass("hide").addClass("show");
-		// $("#hide2").removeClass("hide").addClass("show");
-		// $("#hide3").removeClass("hide").addClass("show");
-		// $("#hide4").removeClass("hide").addClass("show");
-		// $("#hide5").removeClass("hide").addClass("show");
-		// $("#hide6").removeClass("hide").addClass("show");
-		// $("#hide7").removeClass("hide").addClass("show");
 		$("#bars").removeClass("show").addClass("hide");
 		$("#times").removeClass("hide").addClass("show");
-		// $(".hide").toggle();
-		// $(".show").toggle();
-	
+
 	});
 
 	$("#times").click(function(){
 
 		$(".menuhover").toggle();
-		// $("#hide1").removeClass("show").addClass("hide");
-		// $("#hide2").removeClass("show").addClass("hide");
-		// $("#hide3").removeClass("show").addClass("hide");
-		// $("#hide4").removeClass("show").addClass("hide");
-		// $("#hide5").removeClass("show").addClass("hide");
-		// $("#hide6").removeClass("show").addClass("hide");
-		// $("#hide7").removeClass("show").addClass("hide");
 		$("#bars").removeClass("hide").addClass("show");
 		$("#times").removeClass("show").addClass("hide");
-		// $(".hide").toggle();
-		// $(".show").toggle();
 	
 	});
 
@@ -110,13 +95,15 @@ $(document).ready(function(){
 
 	});
 
-var scrtop=$(document).scrollTop();
 
-$(window).scroll(function(){
+var i=0;
+$(window).scroll(function(){	
 
-	
+	var scrtop=$(document).scrollTop();
 
-	if(scrtop==1791){
+	$(".span").text(scrtop);
+
+	if((scrtop==2450||scrtop==2160)&&i==0){
 			
 			$('.count').each(function () {
 			    $(this).prop('Counter',0).animate({
@@ -130,6 +117,8 @@ $(window).scroll(function(){
 					}
 			); // each(function()
 		}); // document.body
+
+		i=1;	
 	}		
 
 	});
