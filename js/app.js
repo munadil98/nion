@@ -103,7 +103,7 @@ $(window).scroll(function(){
 
 	$(".span").text(scrtop);
 
-	if((scrtop==2450||scrtop==2160)&&i==0){
+	if((scrtop>=2090)&&i==0){
 			
 			$('.count').each(function () {
 			    $(this).prop('Counter',0).animate({
@@ -127,14 +127,7 @@ $(window).scroll(function(){
 
 	
 
-		// 	console.log();
-
-				var scrtop=$(document).scrollTop();
-		// console.log(scrtop);
-		
-		// document.getElementById ("name").innerHTML = scrtop;
-
-
+		var scrtop=$(document).scrollTop();
 		if(scrtop>=240){
 			$("#menu").addClass("bgmenu");
 
