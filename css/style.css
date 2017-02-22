@@ -8,6 +8,11 @@ body, html{
 *{
 	padding: 0;
 	margin:0;
+
+	/*First ensure that all HTML elements have the box-sizing property set to border-box. 
+	This makes sure that the padding and border are included in the total width and height of the elements.*/
+	box-sizing: border-box; 
+
 }
 
 .clearfix{
@@ -23,6 +28,11 @@ body, html{
 .transpaernt{
 	background-color: transparent;
 	border: 2px solid transparent;
+}
+
+.secpad{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .section1{
 	
@@ -46,7 +56,10 @@ body, html{
     background-color: transparent;
 }
 
-
+.menuhover{
+	display: none;
+	/*visibility: hidden;*/
+}
 
 .hide{
 	display: none;
@@ -56,13 +69,23 @@ body, html{
 	display: inline-block;
 }
 
+@media (max-width: 767px){
+
+	#times, #bars{
+		visibility: hidden;
+	}
+
+	.hide{
+		visibility: visible;
+	}
+}
 
 .developerrow{
 	padding-bottom: 18%;
 }
 .developerrow img{
 	margin-top: 126px;
-	width: 10%;
+	max-width: 10%;
 	box-sizing: border-box;
 
 	border-radius: 50%;
@@ -78,7 +101,9 @@ body, html{
 }*/
 
 .welcome {
-	font-size: 25px;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 20px;
 	font-weight: 600;
 }
 
@@ -89,24 +114,39 @@ body, html{
 .section2{
 	width: 90%;
 	margin: 0 auto;
+
 }
 
 .section2 img{
-	width: 90%;
+	max-width: 90%;
 	margin: 10% 15%;
 }
 .aboutme{
 	text-align: left;
-	padding: 10% 5%;	
+	padding: 10% 5%;
+		
 }
 
-.button{
+.aboutme p{
+	font-size: 17px;
+	line-height: 22px;
+}
+
+
+.btn-default{
+	margin: 30px 0px;
+	padding: 4% 10% 4%;
+	color: white;
 	background-color: #FFCB2F;
-	padding:1% 3%;
-	border-radius: 20px;
+	padding: 4% 10% 4%;
+    border-radius: 55px;
+    /*line-height: 100%;*/
+    font-size: 25px;
+    border: 2px solid transparent;
 }
 
-.button:hover{
+
+.btn-default:hover{
 	background-color: #FFF;
 }
 
@@ -115,7 +155,8 @@ body, html{
 
 	background-color: #F6F6F6;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0px auto;
+	
 }
 .icon{
 	color: #FFCB2F;
@@ -256,7 +297,7 @@ background-color: #FFCB2F;
 
 .single-picture img{
 	
-    width: 100%;
+    max-width: 100%;
     
     /*border: 1px solid red;*/
 }
