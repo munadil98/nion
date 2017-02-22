@@ -3,13 +3,14 @@ $(document).ready(function(){
 
 	$("#bars").click(function(){
 
-		$("#hide1").removeClass("hide").addClass("show");
-		$("#hide2").removeClass("hide").addClass("show");
-		$("#hide3").removeClass("hide").addClass("show");
-		$("#hide4").removeClass("hide").addClass("show");
-		$("#hide5").removeClass("hide").addClass("show");
-		$("#hide6").removeClass("hide").addClass("show");
-		$("#hide7").removeClass("hide").addClass("show");
+		$(".menuhover").toggle();
+		// $("#hide1").removeClass("hide").addClass("show");
+		// $("#hide2").removeClass("hide").addClass("show");
+		// $("#hide3").removeClass("hide").addClass("show");
+		// $("#hide4").removeClass("hide").addClass("show");
+		// $("#hide5").removeClass("hide").addClass("show");
+		// $("#hide6").removeClass("hide").addClass("show");
+		// $("#hide7").removeClass("hide").addClass("show");
 		$("#bars").removeClass("show").addClass("hide");
 		$("#times").removeClass("hide").addClass("show");
 		// $(".hide").toggle();
@@ -19,13 +20,14 @@ $(document).ready(function(){
 
 	$("#times").click(function(){
 
-		$("#hide1").removeClass("show").addClass("hide");
-		$("#hide2").removeClass("show").addClass("hide");
-		$("#hide3").removeClass("show").addClass("hide");
-		$("#hide4").removeClass("show").addClass("hide");
-		$("#hide5").removeClass("show").addClass("hide");
-		$("#hide6").removeClass("show").addClass("hide");
-		$("#hide7").removeClass("show").addClass("hide");
+		$(".menuhover").toggle();
+		// $("#hide1").removeClass("show").addClass("hide");
+		// $("#hide2").removeClass("show").addClass("hide");
+		// $("#hide3").removeClass("show").addClass("hide");
+		// $("#hide4").removeClass("show").addClass("hide");
+		// $("#hide5").removeClass("show").addClass("hide");
+		// $("#hide6").removeClass("show").addClass("hide");
+		// $("#hide7").removeClass("show").addClass("hide");
 		$("#bars").removeClass("hide").addClass("show");
 		$("#times").removeClass("show").addClass("hide");
 		// $(".hide").toggle();
