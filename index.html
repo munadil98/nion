@@ -13,9 +13,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 </head>
-<body>
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<section class="container-fluid row col-md-12 section1">
+<section class="container-fluid row col-md-12 section1 secpad">
 
 		<!-- nav bar -->
 		<nav class="row col-md-12 navbar navbar-default navbar-fixed-top transpaernt menu" id="menu">
@@ -35,14 +35,16 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      
 		      <ul class="nav navbar-nav navbar-right">
-		        <li class="hide" id="hide1"><a href="#">Home</a></li>
-					<li class="hide" id="hide2"><a class="menuhover" href="#">About</a></li>
-					<li class="hide" id="hide3"><a class="menuhover" href="#">Resume</a></li>
-					<li class="hide" id="hide4"><a class="menuhover" href="#">Work</a></li>
-					<li class="hide" id="hide5"><a class="menuhover" href="#">Testimonial</a></li>
-					<li class="hide" id="hide6"><a class="menuhover" href="#">Contact</a></li>
-					<li class="hide" id="times"><a class="menuhover" href="#"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></li>
-					<li class="show" id="bars"><a class="menuhover" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true" id="ficon"></i></a></li>		        
+		        <li class="hide" id="hide1"><a href="#home">Home</a></li>
+					<li id="hide2" class="menuhover"><a href="#about">About</a></li>
+					<li id="hide3" class="menuhover"><a href="#services">Services</a></li>
+					<li id="hide4" class="menuhover"><a href="#statistics">Statistics</a></li>
+					<li id="hide5" class="menuhover"><a href="#experience">Experience</a></li>
+					<li id="hide6" class="menuhover"><a href="#work">Work</a></li>
+					<li id="hide7" class="menuhover"><a href="#testimonial">Testimonial</a></li>
+					<li id="hide8" class="menuhover"><a href="#contact">Contact</a></li>
+					<li class="hide" id="times"><a href="#"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></li>
+					<li class="show" id="bars"><a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true" id="ficon"></i></a></li>		        
 		      </ul>
 
 		    </div><!-- /.navbar-collapse -->
@@ -64,16 +66,16 @@
 		
 
 <!-- Section2 -->
-<section class="container row col-md-12 section2 clearfix">
-	<div class="col-md-5">
-		<img src="images/me.jpg" alt="me">
+<section class="container row col-md-12 section2 secpad clearfix" id="about">
+	<div class="col-md-5 class="WOW slideInLeft" ">
+		<img  class="WOW slideInLeft" src="images/me.jpg" alt="me">
 	</div>
 	<div class="col-md-7 aboutme">
-		<h1>A BRIEF ABOUT ME.</h1>
-		<h2>Creative Designers & Wordpresss Specialist</h2>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
+		<h1 class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s">A BRIEF ABOUT ME.</h1>
+		<h2 class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".6s">Creative Designers & Wordpresss Specialist</h2>
+		<p class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
 
-		<div class="btn-group button" role="group" aria-label="">
+		<div class="btn-group button WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1s" role="group" aria-label="">
   			<button type="button" class="btn btn-default button">Download Resume</button>
 		</div>
 
@@ -81,12 +83,12 @@
 </section>
 
 <!-- Section3 -->
-<section class="container row col-md-12 section3">
+<section class="container row col-md-12 secpad section3" id="services">
 	<h1>MY SERVICES ARE.</h1>
 
 	<div class="row col-md-12 service">
 		
-		<div class="single-service" id="single-service1">
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".2s" id="single-service1">
 			<div class="icon" id="icon1">
 				<i class="fa fa-camera fa-2x" aria-hidden="true"></i>
 			</div>
@@ -95,7 +97,7 @@
 		
 		</div> 	<!-- single-service ends -->
 
-		<div class="single-service" id="single-service2">
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s" id="single-service2">
 			<div class="icon"  id="icon2">
 				<i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
 			</div>
@@ -104,7 +106,7 @@
 		
 		</div> 	<!-- single-service ends -->
 
-		<div class="single-service" id="single-service3">	
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".6s" id="single-service3">	
 			<div class="icon" id="icon3">
 				<i class="fa fa-wordpress fa-2x" aria-hidden="true"></i>
 			</div>
@@ -113,7 +115,7 @@
 		
 		</div> 	<!-- single-service ends -->
 
-		<div class="single-service" id="single-service4">	
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".8s" id="single-service4">	
 			<div class="icon" id="icon4">
 				<i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
 			</div>
@@ -123,7 +125,7 @@
 		</div> 	<!-- single-service ends -->
 
 
-		<div class="single-service" id="single-service5">	
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1s" id="single-service5">	
 			<div class="icon" id="icon5">
 				<i class="fa fa-volume-up fa-2x" aria-hidden="true"></i>
 			</div>
@@ -133,7 +135,7 @@
 		</div> 	<!-- single-service ends -->
 
 
-		<div class="single-service" id="single-service6">	
+		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1.2s" id="single-service6">	
 			<div class="icon" id="icon6">
 				<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
 			</div>
@@ -146,7 +148,7 @@
 
 
 <!-- Section4 starts -->
-<section class="container row col-md-12 section4">
+<section class="container row col-md-12 secpad section4" id="statistics">
 	<div class="completion" id="project">
 		<span class="count">352</span>
 		<h3>COMPLETE PROJECT</h3>
@@ -168,12 +170,12 @@
 
 
 <!-- Section5 -->
-<section class="container row col-md-12 section3">
+<section class="container row col-md-12 secpad section3" id="experience">
 	<h1>EXPERIENCE.</h1>
 
 	<div class="row col-md-12 experience">
 		
-		<div class="single-experience" id="single-experience1">
+		<div class="single-experience WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".2s" id="single-experience1">
 
 			<div class="designation">
 				<span class="title">COMPUTER SCIENCE</span>
@@ -189,7 +191,7 @@
 			</div>
 		</div> 	<!-- single-service ends -->
 
-		<div class="single-experience" id="single-experience1">
+		<div class="single-experience WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s" id="single-experience1">
 
 			<div class="designation">
 				<span class="title">COMPUTER SCIENCE</span>
@@ -207,7 +209,7 @@
 
 
 
-		<div class="single-experience" id="single-experience1">
+		<div class="single-experience WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".8s" id="single-experience1">
 
 			<div class="designation">
 				<span class="title">COMPUTER SCIENCE</span>
@@ -223,7 +225,7 @@
 			</div>
 		</div> 	<!-- single-service ends -->
 
-		<div class="single-experience" id="single-experience1">
+		<div class="single-experience WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1s" id="single-experience1">
 
 			<div class="designation">
 				<span class="title">COMPUTER SCIENCE</span>
@@ -245,7 +247,7 @@
 
 
 <!-- Section6 -->
-<section class="container row col-md-12 section6">
+<section class="container row col-md-12 secpad section6" id="work">
 	<h1>MY RECENT WORKS.</h1>
 	
 	<!-- four buttons -->
@@ -259,7 +261,7 @@
 
 	<!-- work pictures -->
 	<div class="row col-md-12 picture">
-		<div id="single-service-1" class="single-picture WOW fadeInDown development" data-wow-duration="1s" data-wow-delay="0s">
+		<div id="single-service-1 WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".2s" class="single-picture WOW fadeInDown development" data-wow-duration="1s" data-wow-delay="0s">
 			<img id="image-1" src="images/1.jpg">
 			<div id="portfolio-caption-1" class="hide" >
 				<h3>Web design projec t</h3>
@@ -267,7 +269,7 @@
 			</div>
 		</div>
 
-		<div id="single-service-2" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="1s">
+		<div id="single-service-2 WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="1s">
 			<img id="image-2" src="images/2.jpg">
 			<div id="portfolio-caption-2" >
 				<h3>Web design project</h3>
@@ -275,7 +277,7 @@
 			</div>
 		</div>
 
-		<div id="single-service-3" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="2s">
+		<div id="single-service-3 WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".6s" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="2s">
 			<img id="image-3"  src="images/3.jpg">
 			<div id="portfolio-caption-3" >
 				<h3>Web design project</h3>
@@ -283,7 +285,7 @@
 			</div>
 		</div>
 
-		<div id="single-service-4" class="single-picture WOW fadeInDown development" data-wow-duration="1s" data-wow-delay="3s">
+		<div id="single-service-4 WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".8s" class="single-picture WOW fadeInDown development" data-wow-duration="1s" data-wow-delay="3s">
 			<img id="image-4" src="images/4.jpg">
 			<div id="portfolio-caption-4" >
 				<h3>Web design project</h3>
@@ -291,7 +293,7 @@
 			</div>
 		</div>
 
-		<div id="single-service-5" class="single-picture WOW fadeInDown photography" data-wow-duration="1s" data-wow-delay="4s">
+		<div id="single-service-5 WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1s" class="single-picture WOW fadeInDown photography" data-wow-duration="1s" data-wow-delay="4s">
 			<img id="image-5" src="images/5.jpg">
 			<div id="portfolio-caption-5" >
 				<h3>Web design project</h3>
@@ -299,7 +301,7 @@
 			</div>
 		</div>
 
-		<div id="single-service-6" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="5s">
+		<div id="single-service-6 WOW fadeInDown" data-wow-duration="2s" data-wow-delay="1.2s" class="single-picture WOW fadeInDown webdesign" data-wow-duration="1s" data-wow-delay="5s">
 			<img id="image-6" src="images/6.jpg">
 			<div id="portfolio-caption-6" >
 				<h3>Web design project</h3>
@@ -313,12 +315,11 @@
 
 
 <!-- Section7 -->
-<section class="container row col-md-12 section7">
+<section class="container row col-md-12 secpad section7" id="testimonial">
 	<h1 class="testimonial">WHAT CLIENTS SAYING!</h1>
 
 <!-- Carousel starts -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
@@ -355,23 +356,23 @@
 
 
 <!-- section8 -->
-<section class="container row col-md-12 section8">
+<section class="container row col-md-12 secpad section8" id="contact">
 	<h1>GET IN TOUCH</h1>
 	<div class="row col-md-12">
 		<div class="row col-md-12">
-			<div class="touch">
+			<div class="touch WOW fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s" animation-delay=".2s">
 				<div class="location" id="fontawesome"><i class="fa fa-map fa-2x" aria-hidden="true"></i></div>
 				<div class="location" id="location"><h4>Location</h4><span>Jurain,Dhaka,Bangladesh</span></div>
 				
 			</div>
 
-			<div class="touch">
+			<div class="touch WOW fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s" animation-delay=".4s">
 				<div class="location" id="fontawesome"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
 				<div class="location" id="location"><h4>Location</h4><span>Jurain,Dhaka,Bangladesh</span></div>
 				
 			</div>
 
-			<div class="touch">
+			<div class="touch WOW fadeInLeft" data-wow-duration="2s" data-wow-delay=".6s" animation-delay=".6s">
 				<div class="location" id="fontawesome"><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i></div>
 				<div class="location" id="location"><h4>Location</h4><span>Jurain,Dhaka,Bangladesh</span></div>
 			</div> 	<!-- touch -->
@@ -396,7 +397,7 @@
 			  	<textarea class="form-control" rows="3" cols="12" placeholder="Your Message"></textarea>
 			  </div>
 			  
-			  <div class="col-md-offset-3 col-md-6">
+			  <div class="col-md-offset-3 col-md-6 WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s" animation-delay=".4s">
     			  <button type="submit" class="btn btn-default btn-submit">Submit Now</button>
  	   		  </div>
 			
@@ -406,20 +407,20 @@
 </section> <!-- section8 -->
 
 
-<section class="container row col-md-12 section9">
+<section class="container row col-md-12 secpad section9">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d456.28973795116764!2d90.35409452945277!3d23.807291965273546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1486878864924" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 
 
-<section class="row col-md-12 section10">
+<section class="row col-md-12 secpad section10">
 	
 	<!-- <div class="row col-md-6 col-md-offset-3"> -->
 		<h3>&copy; Copyright 2016 Nion | All RightReserved.</h3>
 
 		<ul>
-			<li><a href="facebook.com">FACEBOOK</a></li>
-			<li><a href="facebook.com">TWITTER</a></li>
-			<li><a href="facebook.com">DRIBBLE</a></li>
+			<li class="WOW fadeInUp" data-wow-duration="2s" data-wow-delay=".2s"><a href="facebook.com">FACEBOOK</a></li>
+			<li class="WOW fadeInUp" data-wow-duration="2s" data-wow-delay=".4s"><a href="facebook.com">TWITTER</a></li>
+			<li class="WOW fadeInUp" data-wow-duration="2s" data-wow-delay=".6s"><a href="facebook.com">DRIBBLE</a></li>
 		</ul>
 	<!-- </div> -->
 </section>
@@ -427,7 +428,7 @@
 
 <!-- add jquery CDN -->
 <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 
