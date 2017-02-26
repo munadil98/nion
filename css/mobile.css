@@ -1,0 +1,139 @@
+@media (max-width: 767px){
+
+	#times, #bars{
+		visibility: hidden;
+	}
+
+	.hide{
+		visibility: visible;
+	}
+
+
+
+
+}
+
+@media (max-width: 320px){
+
+	.single-service{
+		width: 40%;
+		background-color: white;
+		padding: 5% 3%;
+		float: left;
+		margin: 2% 2%;
+	}
+
+	.single-service:nth-child(1){
+		margin-left: 5%;
+	}
+	.single-service:nth-child(2n+0){ 	/*applied every 4th single-service div*/
+		margin-left: 5%;
+	}
+
+}
+
+@media all and (min-width: 1024px) {
+    body{
+        font-size: 18px;
+        line-height: 2.5;
+    }
+}
+ 
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    body{
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+ 
+@media all and (max-width: 767px) and (min-width: 320px) {
+    body{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+ 
+}
+
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+/*h1{
+    font-size: 4.236em;
+}
+ 
+h2{
+    font-size: 2.618em;
+}
+ 
+h3{
+    font-size: 1em;
+    /*line-height: 1.618em;*/
+    /*text-transform: uppercase;*/
+}*/
+ 
+p{
+    font-size: 1em;
+    line-height: 2em;
+}
+
+
+@media (max-width: 320px){
+
+	.completion{
+	    margin: 5% 5%;
+
+	}
+
+	.year {
+    float: left;
+	}
+}
+
+
+@media (max-width: 768px) and (min-width: 321px){
+
+	.welcome {
+	font-size: 15px;
+	font-weight: 600;
+	}
+	
+	.section2 img{
+	/*max-width: 90%;*/
+	margin: 5% 5%;
+	}
+
+	.aboutme{
+	/*text-align: left;*/
+	padding: 0% 5%;
+		
+	}
+
+	.aboutme h1{
+		font-family: 16px
+	}
+
+	.aboutme h2{
+		font-family: 14px
+	}
+
+	.aboutme p{
+	font-size: 12px;
+	line-height: 18px;
+	}
+
+	.completion {
+    /*float: left;*/
+    margin: 5% 1%;
+	}
+
+	.year {
+    float: left;
+	}
+
+
+}

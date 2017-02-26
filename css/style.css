@@ -2,18 +2,22 @@ body, html{
 	margin:0;
 	padding:0;
 	text-align: center;
-	max-height:100%;
+	/*max-height:100%;*/
+	navnaheight:100%;
 	width: 100%;
+	/*font-size: 16px;*/
 }
+
 *{
 	padding: 0;
 	margin:0;
 
 	/*First ensure that all HTML elements have the box-sizing property set to border-box. 
-	This makes sure that the padding and border are included in the total width and height of the elements.*/
+	Thnavnais makes sure that the padding and border are included in the total width and height of the elements.*/
 	box-sizing: border-box; 
 
 }
+
 
 .clearfix{
 	clear: both;
@@ -38,6 +42,7 @@ body, html{
 	
 	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1) ), url(../images/bg.jpg);
 	background-size: cover;
+	/*background-size: 100% 100%;*/
 	/*opacity : 0.9;*/
 	/*background-color: transparent;*/
 	background-attachment: fixed;
@@ -47,7 +52,7 @@ body, html{
 
 .menu span{
 	color: #FFCB2F;
-	font-size: 36px;
+	font-size: 2em;
 	font-weight: bold;
 }
 
@@ -69,23 +74,14 @@ body, html{
 	display: inline-block;
 }
 
-@media (max-width: 767px){
-
-	#times, #bars{
-		visibility: hidden;
-	}
-
-	.hide{
-		visibility: visible;
-	}
-}
 
 .developerrow{
 	padding-bottom: 18%;
 }
 .developerrow img{
 	margin-top: 126px;
-	max-width: 10%;
+	/*max-width: 10%;*/
+	width: 10%;
 	box-sizing: border-box;
 
 	border-radius: 50%;
@@ -118,7 +114,8 @@ body, html{
 }
 
 .section2 img{
-	max-width: 90%;
+	/*max-width: 90%;*/
+	width: 90%;
 	margin: 10% 15%;
 }
 .aboutme{
@@ -128,7 +125,7 @@ body, html{
 }
 
 .aboutme p{
-	font-size: 17px;
+	font-size: 1em;
 	line-height: 22px;
 }
 
@@ -141,7 +138,7 @@ body, html{
 	padding: 4% 10% 4%;
     border-radius: 55px;
     /*line-height: 100%;*/
-    font-size: 25px;
+    font-size: 1.5em;
     border: 2px solid transparent;
 }
 
@@ -187,12 +184,14 @@ body, html{
 .single-service:nth-child(1){
 	margin-left: 6%;
 }
-.single-service:nth-child(4n+0){ 	/*applied every 4th single-service div*/
+
+/*applied every 4th single-service div*/
+.single-service:nth-child(4n+0){ 	
 	margin-left: 6%;
 }
 
 .single-service p{
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 .section4{
@@ -205,13 +204,13 @@ body, html{
 
 .completion{
     float: left;
-    margin: 16% 66px;
+    margin: 16% 3%;
 
 }
 
 .count{
 	color: #FFCB2F;
-	font-size: 60px;
+	font-size: 4em;
 	font-weight: bold;
 }
 
@@ -221,7 +220,7 @@ body, html{
     padding: 5% 3%;
     float: left;
     margin: 2% 6%;
-    line-height: 35px;	
+    /*line-height: 35px;	*/
 }
 
 .single-experience:nth-child(2n+0){
@@ -237,18 +236,18 @@ body, html{
 
 .designation span{
 	padding-top: 0;
-	font-size: 22px;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
 .designation p{
-	font-size: 17px;
+	font-size: 1em;
 }
 
 .year{
 
 	float: right;
-	font-size: 20px;
+	font-size: 1.25em;
     color: white;
     padding: 5px 24px;
 	background-color: #FFCB2F;
@@ -256,7 +255,8 @@ body, html{
 
 .desc{
 	text-align: left;
-	font-size: 17px;
+	/*font-size: 17px;*/
+	font-size: 1em;
 }
 
 .section6 h1{
@@ -297,7 +297,8 @@ background-color: #FFCB2F;
 
 .single-picture img{
 	
-    max-width: 100%;
+    /*max-width: 100%;*/
+    width: 100%;
     
     /*border: 1px solid red;*/
 }
@@ -366,7 +367,8 @@ background-color: #FFCB2F;
 }
 .section7 p{
 	/*border: 2px solid white;*/
-	font-size: 20px;
+	/*font-size: 20px;*/
+	font-size: 1.25em;
 	padding: 5px 150px;
 	font-weight: 500;
 	line-height: 40px;
@@ -407,7 +409,8 @@ background-color: #FFCB2F;
 }
 
 .touch span{
-	font-size: 17px;
+	/*font-size: 17px;*/
+	font-size: 1em;
 }
 
 .contactform{
@@ -422,7 +425,8 @@ background-color: #FFCB2F;
     width: 100%;
     height: 45px;
     padding: 5px 0px;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
     line-height: 1.42857143;
     color: #333;
     background-color: transparent;
@@ -445,7 +449,8 @@ textarea.form-control {
     background-color: #FFCB2F;
     border: 2px solid #FFCB2F;
     color: white;
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1em;
 }
 
 .section9{
