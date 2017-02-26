@@ -11,11 +11,13 @@
 <script src="https://use.fontawesome.com/4667c6741e.js"></script>
 	<script src="https://use.fontawesome.com/4667c6741e.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<section class="container-fluid row col-md-12 section1 secpad" id="#home">
+
+<section class="container row col-md-12 section1 secpad" id="#home">
 
 		<!-- nav bar -->
 		<nav class="row col-md-12 navbar navbar-default navbar-fixed-top transpaernt menu" id="menu">
@@ -52,7 +54,7 @@
 		</nav><!-- nav bar ends -->
 			
 		<div class="row col-md-12 developerrow clearfix">
-			
+			<p id="test"></p>
 			<img src="images/me.jpg" alt="me">
 			<h1 class="name" id="name">MR. JONATHON DOE</h1>
 			<p class="welcome">
@@ -67,10 +69,10 @@
 
 <!-- Section2 -->
 <section class="container row col-md-12 section2 secpad clearfix" id="about">
-	<div class="col-md-5 class="WOW slideInLeft" ">
+	<div class="col-md-5 col-sm-5 col-xs-12 class="WOW slideInLeft" ">
 		<img  class="WOW slideInLeft" src="images/me.jpg" alt="me">
 	</div>
-	<div class="col-md-7 aboutme">
+	<div class="col-md-7 col-sm-7 col-xs-12 aboutme">
 		<h1 class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".4s">A BRIEF ABOUT ME.</h1>
 		<h2 class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".6s">Creative Designers & Wordpresss Specialist</h2>
 		<p class="WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".8s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining</p>
@@ -86,7 +88,7 @@
 <section class="container row col-md-12 secpad section3" id="services">
 	<h1>MY SERVICES ARE.</h1>
 
-	<div class="row col-md-12 service">
+	<div class="row col-md-12 col-xs-12 service">
 		
 		<div class="single-service WOW fadeInDown" data-wow-duration="2s" data-wow-delay=".2s" id="single-service1">
 			<div class="icon" id="icon1">
@@ -318,47 +320,53 @@
 <section class="container row col-md-12 secpad section7" id="testimonial">
 	<h1 class="testimonial">WHAT CLIENTS SAYING!</h1>
 
-<!-- Carousel starts -->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!-- Carousel starts -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <!-- <img src="images/1.jpg  " alt="..."> -->
-      <div class="comment">
-      <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
-      </div>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <h1>JESSICA MALVOCA</h1>
-      <span>CEO Facebook</span>
-    </div>
-    <div class="item">
-      <!-- <img src="images/2.jpg" alt="..."> -->
-      <div class="comment">
-      <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
-      </div>
-         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-         <h1>JESSICA MALVOCA</h1>
-         <span>CEO Facebook</span>
-    </div>
-        <div class="item">
-      <!-- <img src="...images/3.jpg" alt="..."> -->
-      <div class="comment">
-      <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
-      </div>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            <h1>JESSICA MALVOCA</h1>
-         	<span>CEO Facebook</span>
-  </div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		    
+		    <div class="item active">
+		    
+		      <!-- <img src="images/1.jpg  " alt="..."> -->
+		      <div class="comment">
+			      <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+		      </div>
+		 
+		      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		      <h1>JESSICA MALVOCA</h1>
+		      <span>CEO Facebook</span>
+		    </div>
 
-</div><!-- Carousel ends -->
+		    <div class="item">
+		      	<!-- <img src="images/2.jpg" alt="..."> -->
+		        <div class="comment">
+		    	  <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+		    	</div>
+		         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		         <h1>JESSICA MALVOCA</h1>
+		         <span>CEO Facebook</span>
+		    </div>
+
+		    <div class="item">
+		      	<!-- <img src="...images/3.jpg" alt="..."> -->
+		      	<div class="comment">
+		   		   <i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+		     	</div>
+		            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+		            <h1>JESSICA MALVOCA</h1>
+		         	<span>CEO Facebook</span>
+		  	</div>
+
+		</div>   <!-- carousel-inner -->
+
+	</div><!-- Carousel ends -->
 </section> <!-- Section7 -->
 
 
 <!-- section8 -->
 <section class="container row col-md-12 secpad section8" id="contact">
 	<h1>GET IN TOUCH</h1>
-	<div class="row col-md-12">
 		<div class="row col-md-12">
 			<div class="touch WOW fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s" animation-delay=".2s">
 				<div class="location" id="fontawesome"><i class="fa fa-map fa-2x" aria-hidden="true"></i></div>
@@ -376,6 +384,7 @@
 				<div class="location" id="fontawesome"><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i></div>
 				<div class="location" id="location"><h4>Location</h4><span>Jurain,Dhaka,Bangladesh</span></div>
 			</div> 	<!-- touch -->
+			
 		</div> <!-- col-md-12 -->
 
 		<div class="row col-md-11 col-md-offset-1 contactform">
