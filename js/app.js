@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
 
+	$('.parallax-window').parallax({imageSrc: 'images/bg.jpg'});
+
+	$('.parallax-window3').parallax({imageSrc: 'images/testi.jpeg'});
+
 	$(".menuhover").hide();
 
 	// To make the element wiht id bars hidden by default
