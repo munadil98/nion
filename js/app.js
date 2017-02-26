@@ -20,6 +20,17 @@ $(document).ready(function(){
 	
 	});
 
+	var width=screen.width;
+	// $("#test").text("Width: "+width);	
+
+	if(width<=767){
+
+		$("#times").hide();
+		$("#bars").hide();
+		$(".menuhover").show();
+
+	}
+
 
 	$("#single-service1").mouseover(function(){
 
@@ -101,7 +112,7 @@ $(window).scroll(function(){
 
 	var scrtop=$(document).scrollTop();
 
-	$(".span").text(scrtop);
+	// $(".span").text(scrtop);
 
 	if((scrtop>=2090)&&i==0){
 			
